@@ -25,6 +25,18 @@ app.get("/books",function(req, res) {
 
 });
 
+app.get("/books/:id",function(req, res) {
+	Book.findOne({
+		_id : req.params.id
+	}).exec(function(err,book) {
+		if(err) {
+			res.send("An error occured");
+		} else {
+			res.json(book);
+		}
+	});
+});
+
 var PORT = 8080;
 
 app.listen(PORT, function() {
