@@ -15,3 +15,25 @@ exports.allUsersNotes = function(req, res) {
 		}
 	});
 }
+
+exports.createNote = function(req, res) {
+	var newNote = new Note();
+	newNote.memberName = req.body.memberName;
+	newNote.project = req.body.project;
+	newNote.workYesterday = req.body.workYesterday;
+	newNote.workToday = req.body.workToday;
+	newNote.impediment = req.body.impediment;
+
+	newNote.save(function(err) {
+		if(err) {
+			var errMsg = 'Sorry there was an error saving ' + err;
+			res.render('newnote', {
+				title: 'New Note Error',
+				message: errMsg
+			});
+		} else {
+		console.log('Meeting note has been saved');
+		res.redirect(301, '/');
+	}
+	})
+}
