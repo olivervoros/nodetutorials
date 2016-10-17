@@ -1,0 +1,21 @@
+{
+  "name": "searchengine",
+  "description": "",
+  "main": "server.js",
+  "license": "ISC",
+  "homepage": "https://github.com/olivervoros/nodetutorials",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.1",
+    "angular-strap": "^2.3.9",
+    "angular-cookies": "^1.5.8"
+  }
+}
