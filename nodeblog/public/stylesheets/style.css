@@ -22,6 +22,10 @@ body {
 	clear: both;
 }
 
+.post img {
+	width: 100%;
+}
+
 ul{
 	padding:0;
 	margin:0;
@@ -112,4 +116,26 @@ select{
 textarea{
 	height:70px;
 	width:400px;
+}
+
+ul.success li {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	list-style: none;
+}
+
+ul.error li {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	list-style: none;
 }
