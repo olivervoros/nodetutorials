@@ -1,0 +1,21 @@
+{
+  "name": "bookstore",
+  "description": "Technology bookstore",
+  "main": "index.js",
+  "author": "Oliver Voros",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.1.16"
+  }
+}
